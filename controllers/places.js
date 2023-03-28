@@ -23,4 +23,9 @@ router.get("/", (req, res) => {
   });
 });
 
+// Create New Place
+router.get("/new", (req, res) => {
+  res.render("places/new");
+});
+
 module.exports = router;
