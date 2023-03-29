@@ -6,13 +6,15 @@ const app = express();
 app.set("views", __dirname + "/views");
 app.set("views engine", "jsx");
 app.engine("jsx", require("express-react-views").createEngine());
+app.use(express.static("public"));
+app.use(express.urlencoded({ extended: true }));
+app.use(methodOverride("_method"));
 
 //Import Controllers
 app.use("/places", require("./controllers/places"));
 
 //HOME PAGE
 app.get("/", (req, res) => {
-  res.send("Hello World...");
   res.render("home");
 });
 
