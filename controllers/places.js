@@ -24,7 +24,7 @@ router.post("/", (req, res) => {
 
 // new place
 router.get("/new", (req, res) => {
-  res.render("places/new");
+  res.render("places/edit");
 });
 
 router.get("/:id", (req, res) => {
@@ -81,9 +81,6 @@ router.delete("/:id", (req, res) => {
     res.redirect("/places");
   }
 });
-
-const router = require("express").Router();
-const places = require("../models/places");
 
 // Places index page
 router.get("/", (req, res) => {
