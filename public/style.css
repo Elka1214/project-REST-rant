@@ -3,11 +3,6 @@ h1 {
   color: cornflowerblue;
 }
 
-h1 {
-  text-align: center;
-  color: cornflowerblue;
-}
-
 #rests {
   width: 500px;
   height: 500px;
@@ -60,4 +55,11 @@ main {
 #homepagepic {
   height: 500px;
   width: 500px;
+}
+#db {
+  display: m;
+  align-content: center;
+}
+#cb {
+  display: -ms-flexbox;
 }
